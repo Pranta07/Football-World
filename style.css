@@ -5,3 +5,67 @@
 body {
     font-family: "Poppins", sans-serif;
 }
+.half-width {
+    width: 50%;
+}
+.button {
+    width: 168px;
+    height: 44px;
+    position: relative;
+    left: 156px;
+    top: 260px;
+}
+.button a {
+    text-decoration: none;
+    background-color: #e02c6d;
+    color: white;
+    font-weight: 500px;
+    font-size: 16px;
+    padding: 10px 24px;
+}
+.button a:hover {
+    border-radius: 5px;
+    background-color: tomato;
+    transition: background-color 2s ease-in-out, border-radius 2s ease-in-out;
+}
+.fa-arrow-right {
+    width: 24px;
+    height: 24px;
+    padding-left: 8px;
+}
+/* Welcome-page-styles */
+.welcome-page {
+    width: 1440px;
+    height: 677px;
+    background-color: #2d25a0;
+    display: flex;
+}
+.welcome-page:hover {
+    background-color: #514aac;
+    transition: background-color 2s ease-in-out;
+}
+.intro {
+    position: relative;
+    top: 180px;
+    left: 156px;
+    width: 485px;
+    height: 230px;
+}
+.intro h1 {
+    font-size: 64px;
+    font-weight: 700px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.intro h1:hover {
+    color: black;
+    transition: color 2s ease-in-out;
+}
+.banner img {
+    position: absolute;
+    top: 153px;
+    right: 60px;
+    width: 556px;
+    height: 438px;
+}
