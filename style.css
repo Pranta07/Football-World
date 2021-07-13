@@ -79,10 +79,10 @@ main {
     height: 438px;
 }
 /* Players profile styles */
-.player-profile {
+/* .player-profile {
     justify-content: center;
     align-items: center;
-}
+} */
 .players {
     width: 1050px;
     display: grid;
@@ -170,8 +170,50 @@ tr:hover {
     background-color: #f5f5f5;
 }
 
+/* top-news styles */
+.tops-news {
+    width: 1440px;
+}
+.top-news h1 {
+    width: 1440px;
+    color: indianred;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+    text-align: center;
+}
+.all-news {
+    width: 1050px;
+    display: flex;
+    margin-top: 70px;
+    margin-left: 195px;
+    justify-content: space-evenly;
+}
+.news {
+    width: 300px;
+    height: 450px;
+    box-shadow: 2px 2px 20px grey;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+.news .news-image img {
+    width: 300px;
+    height: 256px;
+    border-radius: 10px;
+}
+.news-details h2 {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #18191f;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.fa-clock {
+    font-size: 20px;
+}
 /* footer styles */
 footer {
+    width: 1440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
