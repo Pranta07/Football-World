@@ -6,6 +6,9 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0px;
 }
+main {
+    margin-bottom: 50px;
+}
 .half-width {
     width: 50%;
 }
@@ -111,4 +114,22 @@ body {
     color: #6c6c6c;
     margin-top: 0px;
     margin-bottom: 33px;
+}
+
+/* footer styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.logo img {
+    width: 483.87px;
+    height: 110px;
+}
+.fab {
+    width: 32px;
+    height: 32px;
+    color: grey;
 }
