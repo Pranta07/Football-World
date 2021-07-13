@@ -4,6 +4,7 @@
 /* Commmon styles */
 body {
     font-family: "Poppins", sans-serif;
+    margin: 0px;
 }
 .half-width {
     width: 50%;
@@ -28,6 +29,10 @@ body {
     background-color: tomato;
     transition: background-color 2s ease-in-out, border-radius 2s ease-in-out;
 }
+.button a:hover i {
+    transform: rotate(360deg);
+    transition: transform 2s ease-in-out;
+}
 .fa-arrow-right {
     width: 24px;
     height: 24px;
@@ -39,6 +44,7 @@ body {
     height: 677px;
     background-color: #2d25a0;
     display: flex;
+    margin-bottom: 10px;
 }
 .welcome-page:hover {
     background-color: #514aac;
@@ -68,4 +74,41 @@ body {
     right: 60px;
     width: 556px;
     height: 438px;
+}
+/* Players profile styles */
+.player-profile {
+    justify-content: center;
+    align-items: center;
+}
+.players {
+    width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin-top: 70px;
+    margin-left: 195px;
+}
+.player {
+    width: 300px;
+    height: 450px;
+    box-shadow: 2px 2px 20px grey;
+    padding: 10px 15px;
+}
+.player .player-image img {
+    width: 300px;
+    height: 256px;
+}
+.player-details h1 {
+    font-weight: bolder;
+    font-size: 28px;
+    color: #18191f;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.player-details p {
+    font-size: 16px;
+    color: #6c6c6c;
+    margin-top: 0px;
+    margin-bottom: 33px;
 }
