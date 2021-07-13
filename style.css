@@ -116,6 +116,60 @@ main {
     margin-bottom: 33px;
 }
 
+/* Female-players-styles */
+.top-female {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px indianred;
+    margin: 50px;
+}
+.top-female h1 {
+    color: indianred;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+    text-align: center;
+}
+.female-players {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 50px;
+    margin-left: 60px;
+}
+.fem-player {
+    width: 300px;
+    box-shadow: 5px 5px 20px grey;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.fem-player img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+.fem-player h2 {
+    color: salmon;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* table tyles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
 /* footer styles */
 footer {
     display: flex;
