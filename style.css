@@ -232,7 +232,7 @@ footer {
 }
 
 /* Media-Queries */
-/* Mobile */
+/* Mobile responsive */
 @media only screen and (max-width: 688px) {
     /* welcome-page */
     .welcome-page {
@@ -273,10 +273,6 @@ footer {
         margin-left: 0px;
     }
     .player {
-        width: 300px;
-        height: 454px;
-        box-shadow: 2px 2px 20px grey;
-        padding: 10px 15px;
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -314,6 +310,92 @@ footer {
         flex-direction: column;
         margin-top: 50px;
         margin-left: 15px;
+    }
+    .news {
+        margin-bottom: 20px;
+    }
+    /* footer styles */
+    footer {
+        width: 100%;
+    }
+    .logo img {
+        width: 280px;
+        height: 80px;
+    }
+}
+/* Ipad responsive */
+@media only screen and (min-width: 688px) and (max-width: 1024px) {
+    /* welcome-page */
+    .welcome-page {
+        width: 100%;
+        height: 650px;
+        margin-bottom: 47px;
+    }
+    .intro {
+        position: relative;
+        top: 200px;
+        left: 50px;
+        width: 278px;
+        height: 138px;
+    }
+    .intro h1 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .button {
+        position: absolute;
+        left: 50px;
+        top: 450px;
+    }
+    .banner img {
+        position: absolute;
+        top: 200px;
+        left: 400px;
+        width: 329px;
+        height: 259px;
+    }
+    /* players-profile */
+    .players {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 15px;
+    }
+    .player {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    /* female-profile */
+    .top-female {
+        width: 94%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 30px indianred;
+        margin: 0px 30px;
+    }
+    .female-players {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 5px;
+        margin-left: 30px;
+    }
+    .fem-player {
+        width: 280px;
+        margin-bottom: 20px;
+    }
+    .fem-player img {
+        width: 280px;
+    }
+    /* top-news */
+    .tops-news {
+        width: 100%;
+    }
+    .top-news h1 {
+        width: 100%;
+    }
+    .all-news {
+        width: 100%;
+        display: flex;
+        margin-top: 50px;
+        margin-left: 0px;
     }
     .news {
         margin-bottom: 20px;
