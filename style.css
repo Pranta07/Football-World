@@ -123,7 +123,6 @@ main {
 
 /* Female-players-styles */
 .top-female {
-    width: 100%;
     border-radius: 10px;
     box-shadow: 5px 5px 30px indianred;
     margin: 50px;
@@ -204,7 +203,7 @@ tr:hover {
     height: 450px;
     box-shadow: 2px 2px 20px grey;
     border-radius: 10px;
-    padding: 10px 15px;
+    padding: 10px 18px;
     overflow: hidden;
 }
 .news .news-image img {
@@ -253,7 +252,7 @@ footer {
 @media only screen and (max-width: 688px) {
     /* welcome-page */
     .welcome-page {
-        width: 360px;
+        width: 370px;
         height: 695px;
         margin-bottom: 47px;
     }
@@ -287,7 +286,7 @@ footer {
         width: 360px;
         display: flex;
         flex-direction: column;
-        margin-left: 0px;
+        margin-left: 5px;
     }
     .player {
         margin-left: 15px;
@@ -295,10 +294,10 @@ footer {
     }
     /* female-profile */
     .top-female {
-        width: 92%;
         border-radius: 10px;
         box-shadow: 5px 5px 30px indianred;
-        margin: 0px 15px;
+        margin: 0px 8px;
+        margin-left: 18px;
     }
     .female-players {
         width: 100%;
