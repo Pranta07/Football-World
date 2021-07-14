@@ -17,7 +17,7 @@ main {
     height: 44px;
     position: relative;
     left: 156px;
-    top: 260px;
+    top: 240px;
 }
 .button a {
     text-decoration: none;
@@ -63,6 +63,7 @@ main {
 .intro h1 {
     font-size: 64px;
     font-weight: 700px;
+    line-height: 80px;
     color: white;
     margin-top: 0px;
     margin-bottom: 30px;
@@ -228,4 +229,100 @@ footer {
     width: 32px;
     height: 32px;
     color: grey;
+}
+
+/* Media-Queries */
+/* Mobile */
+@media only screen and (max-width: 688px) {
+    /* welcome-page */
+    .welcome-page {
+        width: 360px;
+        height: 695px;
+        margin-bottom: 47px;
+    }
+    .intro {
+        position: relative;
+        top: 112px;
+        left: 16px;
+        width: 278px;
+        height: 138px;
+    }
+    .intro h1 {
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 50px;
+        margin-bottom: 0px;
+    }
+    .button {
+        position: absolute;
+        left: 19px;
+        top: 280px;
+    }
+    .banner img {
+        position: absolute;
+        top: 374px;
+        left: 15px;
+        width: 329px;
+        height: 259px;
+    }
+    /* players-profile */
+    .players {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .player {
+        width: 300px;
+        height: 454px;
+        box-shadow: 2px 2px 20px grey;
+        padding: 10px 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    /* female-profile */
+    .top-female {
+        width: 92%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 30px indianred;
+        margin: 0px 15px;
+    }
+    .female-players {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5px;
+        margin-left: 15px;
+    }
+    .fem-player {
+        width: 280px;
+    }
+    .fem-player img {
+        width: 280px;
+    }
+    /* top-news */
+    .tops-news {
+        width: 100%;
+    }
+    .top-news h1 {
+        width: 100%;
+    }
+    .all-news {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+    .news {
+        margin-bottom: 20px;
+    }
+    /* footer styles */
+    footer {
+        width: 100%;
+    }
+    .logo img {
+        width: 280px;
+        height: 80px;
+    }
 }
