@@ -48,6 +48,7 @@ main {
     height: 677px;
     background-color: #2d25a0;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 .welcome-page:hover {
     background-color: #514aac;
