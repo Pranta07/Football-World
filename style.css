@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 /* Commmon styles */
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: "Poppins", sans-serif;
     margin: 0px;
@@ -13,11 +16,8 @@ main {
     width: 50%;
 }
 .button {
-    width: 168px;
-    height: 44px;
     position: relative;
-    left: 156px;
-    top: 240px;
+    top: 40px;
 }
 .button a {
     text-decoration: none;
@@ -43,69 +43,73 @@ main {
 }
 /* Welcome-page-styles */
 .welcome-page {
-    width: 1440px;
+    display: flex;
+    width: 100%;
     height: 677px;
     background-color: #2d25a0;
-    display: flex;
     margin-bottom: 10px;
 }
 .welcome-page:hover {
     background-color: #514aac;
-    transition: background-color 2s ease-in-out;
+    transition: background-color 2s ease-in-out 0.3s;
 }
-.intro {
+.welcome-page:hover .banner img {
+    transform: rotate(25deg);
+    transition: transform 2s ease-in-out;
+}
+.welcome-intro {
     position: relative;
     top: 180px;
-    left: 156px;
-    width: 485px;
-    height: 230px;
+    left: 150px;
+}
+.intro {
+    width: 60%;
 }
 .intro h1 {
     font-size: 64px;
     font-weight: 700px;
     line-height: 80px;
     color: white;
-    margin-top: 0px;
-    margin-bottom: 30px;
+    margin: 0;
 }
 .intro h1:hover {
     color: black;
     transition: color 2s ease-in-out;
 }
 .banner img {
-    position: absolute;
-    top: 153px;
-    right: 60px;
-    width: 556px;
-    height: 438px;
+    position: relative;
+    top: 100px;
+    width: 90%;
 }
 /* Players profile styles */
+.players-profile {
+    display: flex;
+    justify-content: center;
+}
 .players {
-    width: 1050px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 27px;
-    margin-top: 70px;
-    margin-left: 195px;
+    margin-top: 50px;
 }
 .player {
-    width: 300px;
-    height: 450px;
+    width: 330px;
+    height: 474px;
     box-shadow: 2px 2px 20px grey;
-    padding: 10px 15px;
+    padding: 15px 15px;
     overflow: hidden;
 }
 .player:hover img {
-    transform: scale(1.1);
+    transform: scale(1.15);
     transition: transform 2s;
 }
 .player .player-image img {
-    width: 300px;
-    height: 256px;
+    width: 100%;
+    height: 230px;
 }
 .player-details h1 {
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 28px;
     color: #18191f;
     margin-top: 16px;
@@ -113,6 +117,7 @@ main {
 }
 .player:hover .player-details h1 {
     color: coral;
+    transition: color 2s ease-in-out;
 }
 .player-details p {
     font-size: 16px;
@@ -123,36 +128,36 @@ main {
 
 /* Female-players-styles */
 .top-female {
+    display: flex;
+    justify-content: center;
     border-radius: 10px;
-    box-shadow: 5px 5px 30px indianred;
+    box-shadow: 5px 5px 30px rgb(245, 214, 214);
     margin: 50px;
-    margin-left: 44px;
 }
 .top-female h1 {
     color: indianred;
     font-size: 30px;
     font-weight: bold;
-    padding-top: 30px;
     text-align: center;
 }
 .female-players {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
     padding-bottom: 50px;
-    margin-left: 57px;
 }
 .fem-player {
-    width: 300px;
-    box-shadow: 5px 5px 20px grey;
+    width: 320px;
+    box-shadow: 2px 2px 20px rgb(241, 201, 197);
     border-radius: 10px;
     padding: 10px 10px;
     overflow: hidden;
 }
 .fem-player img {
-    width: 300px;
+    width: 100%;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 .fem-player:hover img {
     transform: scale(1.1);
@@ -181,14 +186,10 @@ tr:hover {
 }
 hr {
     width: 75%;
-    margin-left: 190px;
+    margin-left: 170px;
 }
 /* top-news styles */
-.tops-news {
-    width: 1440px;
-}
 .top-news h1 {
-    width: 1440px;
     color: indianred;
     font-size: 30px;
     font-weight: bold;
@@ -197,24 +198,25 @@ hr {
     text-align: center;
 }
 .all-news {
-    width: 1050px;
+    width: 100%;
     display: flex;
+    justify-content: center;
     margin-top: 40px;
-    margin-left: 195px;
-    justify-content: space-evenly;
 }
 .news {
-    width: 300px;
+    position: relative;
+    width: 320px;
     height: 450px;
     box-shadow: 2px 2px 20px grey;
     border-radius: 10px;
-    padding: 10px 18px;
+    padding: 10px 10px;
+    margin: 0 30px;
     overflow: hidden;
 }
 .news .news-image img {
-    width: 300px;
-    height: 256px;
-    border-radius: 10px;
+    width: 100%;
+    height: 220px;
+    border-radius: 10px 10px 0 0;
 }
 .news:hover img {
     transform: scale(1.1);
@@ -230,12 +232,16 @@ hr {
 .news:hover .news-details h2 {
     color: indianred;
 }
+.news-details i {
+    position: absolute;
+    left: 86px;
+    bottom: 20px;
+}
 .fa-clock {
     font-size: 20px;
 }
 /* footer styles */
 footer {
-    width: 1440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -243,7 +249,7 @@ footer {
     margin-bottom: 50px;
 }
 .logo img {
-    width: 483.87px;
+    width: 480px;
     height: 110px;
 }
 .fab {
@@ -251,72 +257,49 @@ footer {
     height: 32px;
     color: grey;
 }
-
 /* Media-Queries */
 /* Mobile responsive */
 @media only screen and (max-width: 688px) {
     /* welcome-page */
     .welcome-page {
-        width: 370px;
-        height: 695px;
-        margin-bottom: 47px;
+        flex-direction: column;
     }
-    .intro {
-        position: relative;
+    .welcome-intro {
+        width: 95%;
         top: 112px;
         left: 16px;
-        width: 278px;
-        height: 138px;
+    }
+    .intro {
+        width: 100%;
     }
     .intro h1 {
+        width: 100%;
         font-size: 36px;
         font-weight: bold;
         line-height: 50px;
         margin-bottom: 0px;
     }
-    .button {
-        position: absolute;
-        left: 19px;
-        top: 250px;
-    }
     .banner img {
-        position: absolute;
-        top: 350px;
+        top: 220px;
         left: 15px;
         width: 329px;
         height: 259px;
     }
     /* players-profile */
     .players {
-        width: 360px;
-        display: flex;
-        flex-direction: column;
-        margin-left: 5px;
-    }
-    .player {
-        margin-left: 15px;
-        margin-right: 15px;
+        grid-template-columns: repeat(1, 1fr);
     }
     /* female-profile */
     .top-female {
-        border-radius: 10px;
-        box-shadow: 5px 5px 30px indianred;
-        margin: 0px 8px;
-        margin-left: 18px;
+        margin: 20px;
     }
     .female-players {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 5px;
-        margin-left: 15px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
     }
     .fem-player {
-        width: 280px;
-        margin-bottom: 20px;
-    }
-    .fem-player img {
-        width: 280px;
+        width: 90%;
+        margin-left: 15px;
     }
     hr {
         width: 65%;
@@ -325,21 +308,18 @@ footer {
         border: 1px solid black;
     }
     /* top-news */
-    .tops-news {
-        width: 100%;
-    }
-    .top-news h1 {
-        width: 100%;
+    .top-news {
+        display: flex;
+        justify-content: center;
     }
     .all-news {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 25px;
-        margin-left: 15px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
     .news {
+        width: 90%;
         margin-bottom: 20px;
+        margin-left: 19px;
     }
     /* footer styles */
     footer {
@@ -354,85 +334,67 @@ footer {
 @media only screen and (min-width: 688px) and (max-width: 1024px) {
     /* welcome-page */
     .welcome-page {
-        width: 100%;
-        height: 650px;
-        margin-bottom: 47px;
+        height: 600px;
+    }
+    .welcome-intro {
+        top: 177px;
+        left: 30px;
     }
     .intro {
-        position: relative;
-        top: 200px;
-        left: 50px;
-        width: 278px;
-        height: 138px;
+        width: 80%;
     }
     .intro h1 {
         font-size: 50px;
-        line-height: 70px;
-    }
-    .button {
-        position: absolute;
-        left: 50px;
-        top: 450px;
+        line-height: 60px;
     }
     .banner img {
-        position: absolute;
-        top: 200px;
-        left: 400px;
-        width: 329px;
-        height: 259px;
+        top: 160px;
+        left: 5px;
+        width: 360px;
+        height: 300px;
     }
     /* players-profile */
     .players {
-        width: 100%;
         grid-template-columns: repeat(2, 1fr);
-        margin-left: 15px;
-    }
-    .player {
-        margin-left: 15px;
-        margin-right: 15px;
     }
     /* female-profile */
     .top-female {
-        width: 94%;
-        border-radius: 10px;
-        box-shadow: 5px 5px 30px indianred;
-        margin: 0px 30px;
+        margin: 20px;
     }
     .female-players {
-        width: 100%;
         grid-template-columns: repeat(2, 1fr);
-        padding-bottom: 5px;
-        margin-left: 30px;
+        grid-row-gap: 20px;
     }
     .fem-player {
-        width: 280px;
-        margin-bottom: 20px;
+        width: 90%;
+        margin-left: 15px;
     }
-    .fem-player img {
-        width: 280px;
+    hr {
+        width: 80%;
+        margin-left: 80px;
+        margin-top: 20px;
+        border: 1px solid black;
     }
     /* top-news */
-    .tops-news {
-        width: 100%;
-    }
-    .top-news h1 {
-        width: 100%;
+    .top-news {
+        display: flex;
+        justify-content: center;
     }
     .all-news {
-        width: 100%;
-        display: flex;
-        margin-top: 50px;
-        margin-left: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
     .news {
+        width: 90%;
         margin-bottom: 20px;
+        margin-left: 19px;
     }
     /* footer styles */
     footer {
         width: 100%;
     }
     .logo img {
-        width: 280px;
-        height: 80px;
+        width: 350px;
+        height: 100px;
     }
 }
